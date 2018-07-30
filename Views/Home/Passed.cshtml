@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<!-- <h2>@ViewData["Title"]</h2> -->
+
+
+<br>
+    <br>
+    <div class="body-d">
+        <h4>Fulness: @Model.fullness Happiness: @Model.happiness Meals: @Model.meal Energy: @Model.energy</h4>
+        <div class="containerInfo">
+            <image src="/images/pupy.jpg" alt="Pupy"/>
+            <p>@ViewData["Message"]</p>
+        </div><br>
+        <input type="button" value="Restart" onclick="window.location.href='@Url.Action("Restart", "Home")'"/>
+    </div>

@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    
+    <br>
+    <br>
+    <div class="body-d">
+        <h4>Fulness: @Model.fullness Happiness: @Model.happiness Meals: @Model.meal Energy: @Model.energy</h4>
+        <div class="containerInfo">
+            <image src="/images/pupy.jpg" alt="Pupy"></image>
+            <p>You played with you DojoDochi Happiness: @Model.happiness, Energy: @Model.energy</p>
+        </div>
+        <br>
+        <input type="button" value="Feed" onclick="window.location.href='@Url.Action("Feed", "Home")'"/>&nbsp;
+        <input type="button" value="Play" onclick="window.location.href='@Url.Action("Play", "Home")'"/>&nbsp;
+        <input type="button" value="Work" onclick="window.location.href='@Url.Action("Work", "Home")'"/>&nbsp;
+        <input type="button" value="Sleep" onclick="window.location.href='@Url.Action("Sleep", "Home")'"/>
+
+    </div>
+</div>
